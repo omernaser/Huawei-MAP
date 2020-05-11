@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/HMS_Map_Demo/.vs/HMS_Map_Demo/v16
+/HMS_Map_Demo/HMS_Map_Demo/obj
+/HMS_Map_Demo/HMS_Map_Demo/bin/Debug
+/HMS_Map_Demo/HMS_Map_Demo.sln
+/HMS_Map_Demo/HMS_Map_Demo/HMS_Map_Demo.csproj.user
