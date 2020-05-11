@@ -1,19 +1,90 @@
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-	android:orientation="vertical"
+    android:layout_width="match_parent"	
     android:layout_height="match_parent">
-<com.huawei.hms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+
+   
+   
+    	<com.huawei.hms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:map="http://schemas.android.com/apk/res-auto"
-		android:id="@+id/mapView"
+		android:id="@+id/mapview"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		map:cameraTargetLat="51"
-		map:cameraTargetLng="10"
-		map:cameraZoom="8.5"
+	  map:cameraTargetLat="41.019879" 
+    map:cameraTargetLng="29.007822" 
+	   map:cameraZoom="12" 
 		map:mapType="normal"
 		map:uiCompass="true"
 		map:uiZoomControls="true" />
-</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+          <Button
+            android:id="@+id/btnMarkersDemo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Markers"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/upsdk_white"
+            android:background="@color/colorAccent"/>
+        <Button
+            android:id="@+id/btnPolylineDemo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Polylines"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/upsdk_white"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btnPolygonDemo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Polygons"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/upsdk_white"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btnCircleDemo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Circles"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/upsdk_white"
+            android:background="@color/colorAccent"/>
+        <Button
+            android:id="@+id/btnOverlayDemo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Overlays"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/upsdk_white"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+
+</RelativeLayout>
