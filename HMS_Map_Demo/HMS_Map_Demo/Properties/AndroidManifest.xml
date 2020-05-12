@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
           android:versionCode="1" 
-          android:versionName="1.0" 
-          package="com.companyname.hms_map_demo">
+          android:versionName="1.0"   android:installLocation="auto"
+          package="com.mapdemo.huawei">
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
   <permission android:name="com.xamarin.hms.map.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
   <uses-permission android:name="com.xamarin.hms.map.permission.MAPS_RECEIVE" />
@@ -18,7 +18,7 @@
 
     <meta-data
 				android:name="com.huawei.hms.client.appid"
-				android:value="appid=102195845" />
+				android:value="appid=101728629" />
   </application>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>

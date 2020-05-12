@@ -27,9 +27,9 @@ namespace HMS_Map_Demo
         //Huawei map
         private HuaweiMap hMap;
 
-        private MapView mMapView;
+        private MapFragment mMapView;
 
-        Button btnPolylineDemo, btnPolygonDemo, btnCircleDemo, btnMarkersDemo, btnOverlayDemo;
+        Button btnPolylineDemo, btnPolygonDemo, btnCircleDemo, btnMarkersDemo, btnOverlayDemo, btntype;
 
 
         private static string MAPVIEW_BUNDLE_KEY = "MapViewBundleKey";
@@ -51,13 +51,20 @@ namespace HMS_Map_Demo
                 Android.Manifest.Permission.Internet }, 100);
 
             //get mapview instance
-            mMapView = FindViewById<MapView>(Resource.Id.mapview);
+            mMapView = FragmentManager.FindFragmentById<MapFragment>(Resource.Id.mapview);
 
             btnMarkersDemo = FindViewById<Button>(Resource.Id.btnMarkersDemo);
             btnPolylineDemo = FindViewById<Button>(Resource.Id.btnPolylineDemo);
             btnPolygonDemo = FindViewById<Button>(Resource.Id.btnPolygonDemo);
             btnCircleDemo = FindViewById<Button>(Resource.Id.btnCircleDemo);
             btnOverlayDemo = FindViewById<Button>(Resource.Id.btnOverlayDemo);
+            btntype = FindViewById<Button>(Resource.Id.btntype);
+            btntype.Click += OnClick;
+            btnMarkersDemo.Click += btnMarkersDemo_Click;
+            btnPolylineDemo.Click += btnPolylineDemo_Click;
+            btnPolygonDemo.Click += btnPolygonDemo_Click;
+            btnCircleDemo.Click += btnCircleDemo_Click;
+            btnOverlayDemo.Click += btnOverlayDemo_Click;
 
             Bundle mapViewBundle = null;
             if (savedInstanceState != null)
@@ -66,7 +73,17 @@ namespace HMS_Map_Demo
             }
             mMapView.OnCreate(mapViewBundle);
             //get map instance
-            mMapView.GetMapAsync(this);
+            RunOnUiThread(()=> mMapView.GetMapAsync(this));
+        }
+
+        private void OnClick(object sender, EventArgs e)
+        {
+            if (hMap.MapType == 1 || hMap.MapType == 0)
+                hMap.MapType = 2;
+            else
+                hMap.MapType = 1;
+          
+            RunOnUiThread(() => mMapView.GetMapAsync(this));
         }
 
         public void checkPermission(string[] permissions, int requestCode)
@@ -333,15 +350,15 @@ namespace HMS_Map_Demo
         }
         public void OnMarkerDragStart(object sender, HuaweiMap.MarkerDragStartEventArgs e)
         {
-            Toast.MakeText(this, $"Drag Start Marker ID: {e.P0.Id}", ToastLength.Short).Show();
+            //Toast.MakeText(this, $"Drag Start Marker ID: {e.P0.Id}", ToastLength.Short).Show();
         }
         public void OnMarkerDrag(object sender, HuaweiMap.MarkerDragEventArgs e)
         {
-            Toast.MakeText(this, $"Dragging Marker ID: {e.P0.Id}", ToastLength.Short).Show();
+            //Toast.MakeText(this, $"Dragging Marker ID: {e.P0.Id}", ToastLength.Short).Show();
         }
         public void OnMarkerDragEnd(object sender, HuaweiMap.MarkerDragEndEventArgs e)
         {
-            Toast.MakeText(this, $"Drag End Marker ID: {e.P0.Id}", ToastLength.Short).Show();
+            //Toast.MakeText(this, $"Drag End Marker ID: {e.P0.Id}", ToastLength.Short).Show();
         }
         public void OnPolylineClick(object sender, HuaweiMap.PolylineClickEventArgs e)
         {
@@ -360,4 +377,4 @@ namespace HMS_Map_Demo
             Toast.MakeText(this, $"Overlay Click Overlay ID: {e.P0.Id}", ToastLength.Short).Show();
         }
     }
-    }
+}

@@ -37,6 +37,11 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidSigningKeyStore>D:\Developent\flutter_app\android\app\mapDemo.jks</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>123456</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>mapDemo</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>123456</AndroidSigningKeyPass>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>

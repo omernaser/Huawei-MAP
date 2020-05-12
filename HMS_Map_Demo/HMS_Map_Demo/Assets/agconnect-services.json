@@ -4,13 +4,13 @@
 		"url":"connect-dre.hispace.hicloud.com"
 	},
 	"client":{
-		"cp_id":"2640962000000364721",
-		"product_id":"736430079244443168",
-		"client_id":"360081729215530048",
-		"client_secret":"DC586D2B81F4A3C883B5A9E55E6C12B6F06ED499167F0E3C996DFEA0D1AFEC0A",
-		"app_id":"102195845",
-		"package_name":"com.companyname.hms_map_demo",
-		"api_key":"CV7gxjgJSRoZPSmJKkj2lA2025jFZxsWo9mcQd4mzVcaYkU2CeO9xKwFeHZwCQaH6hckCAci4Z9PgIVJkIutmd/bXWF8"
+		"cp_id":"890020000000000769",
+		"product_id":"9105385871708469790",
+		"client_id":"298593929299756224",
+		"client_secret":"81857DF907AE63D558E0897D76B8A00DC7C132DB87D80700E3C89B6C5B37173D",
+		"app_id":"101728629",
+		"package_name":"com.mapdemo.huawei",
+		"api_key":"CV5w7d8NWe0rlkqnX/uv1dyRxTV2S8TpLTU6yZyaHSGDPf5sxqY/+6Hshe9njVWt3LviEQAMdfaRtuPMxQRLk9TaRosT"
 	},
 	"service":{
 		"analytics":{
