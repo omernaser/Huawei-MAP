@@ -1,3 +1,4 @@
+![](https://raw.githubusercontent.com/omernaser/Huawei-MAP/master/huaweiicon.png)
 ## Xamarin.Android.HuaweiMaps
 Yet another maps library for Xamarin.Android that optimized for Huawei maps.
 
