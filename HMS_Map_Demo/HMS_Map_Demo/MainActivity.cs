@@ -12,11 +12,11 @@ using Android.Content;
 using System;
 using Android.Content.PM;
 using Com.Huawei.Agconnect.Config;
-using HmsMapDemo;
 using Android.Support.V4.Content;
 using Com.Huawei.Hms.Maps.Model;
 using Android.Graphics;
 using Com.Huawei.Hms.Maps.Util;
+using HmsMapDemo;
 
 namespace HMS_Map_Demo
 {
