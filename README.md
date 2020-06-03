@@ -34,6 +34,7 @@ Furthermore, I am using Huawei Maps instead of MapKit because it is easy for def
 
 ## Setup
 Available on NuGet :(https://www.nuget.org/packages/Xamarin.Android.HuaweiMap/)
+-   Please make sure you have  Xamarin.Android.HMSBase as a refernance
 
 ## Platform Support
 | Android => yes |
