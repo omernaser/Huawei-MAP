@@ -105,8 +105,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <PackageReference Include="Xamarin.Android.HMSBase">
+      <Version>4.0.0.305</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.HMSLocation">
+      <Version>4.0.2.300</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Android.HuaweiMap">
-      <Version>4.0.1.301</Version>
+      <Version>4.0.1.304</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.3" />
